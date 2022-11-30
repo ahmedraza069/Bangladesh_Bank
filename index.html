@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank Project JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <section id="logIn">
+        <div class="context">
+                
+        </div>
+    
+    
+    <div class="area" >
+                <ul class="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                </ul>
+        </div >
+        <div class="container">
+            <div id="main">
+                <div class="login">
+                    <header class="header">
+                      <span class="text">LOGIN</span>
+                      <span class="loader"></span>
+                    </header>
+                    <div class="form">  <input class="input" type="text", placeholder="Username">
+                        <input class="input" type="password" placeholder="Password">
+                        <button id="loginBtn" class="btn"></button>
+                    </div>
+                  </div>  
+            </div>
+        </div>
+    </section>
+<section id="transaction-area">
+    <div class="container">
+
+        <div class="transaction-main">
+            
+	<input class="dark-light" type="checkbox" id="dark-light" name="dark-light"/>
+    <label for="dark-light"></label>
+
+    <div class="light-back"></div> 
+<!-- /////////////////////////////////////////// -->
+  <div class="section-fluid-main">
+    <div class=" button-upper section-col-2 upper">
+        <div class="section">
+            <p class="color-blue">Your current balance</p>
+            <h3>$ <span id="curentBalance"> 1000.00</span></h3>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////// -->
+      <div class="section-row">
+        
+          <div class=" button-main section-col-2">
+              <div class="section">
+                  <p class="color-blue">Total Deposit</p>
+                  <h3>$ <span  id="curentDeposit"> 100.00</span></h3>
+              </div>
+               <div class="row">
+                <div class="col-lg-12">
+                <div class="button_main">
+                    <h4>Deposit</h4>
+                    <input type="text" id="depositAmount" class="form-control" placeholder="$ amount you want to deposit">
+                    <button id="addDeposit" class="transaction_button">
+                        Deposit
+                    </button>
+                </div>
+                </div>
+             </div>
+
+          </div>
+
+          <!-- 
+        ///////////////////////////////////////////////////////
+           -->
+          <div class="button-right section-col-2">
+              <div class="section">
+                  <p class="color-yellow">Total Withdraw</p>
+                  <h3>$ <span id="curentWithdraw">150.00</span></h3>
+              </div>
+             <div class="row">
+                <div class="col-lg-12">
+                <div class="button_main">
+                    <h4>Withdraw</h4>
+                    <input id="withdrawAmount" type="text" class="form-control" placeholder="$ amount you want to withdraw">
+                    <button id="addWithdraw" class="transaction_button ">
+                        Withdraw
+                    </button>
+                </div>
+                </div>
+             </div>
+                
+
+
+          </div>
+            <input class="date-btn" type="radio" id="date-1" name="date-btn" checked/>
+            <label for="date-1"><span>30 days</span></label> 
+            <input class="date-btn" type="radio" id="date-2" name="date-btn"/>
+            <label for="date-2"><span>90 days</span></label> 
+            <input class="date-btn" type="radio" id="date-3" name="date-btn"/>
+            <label for="date-3"><span>180 days</span></label> 
+            <input class="date-btn" type="radio" id="date-4" name="date-btn"/>
+            <label for="date-4"><span>365 days</span></label> 
+          <div class="section-col-1">
+              <div class="section">
+                  <div class="section-progress">
+                      <div class="income days-30">
+                          <div class="income-tooltip">
+                              <p>Income</p>
+                              <h6>$ 2,501.57</h6>
+                          </div>
+                      </div>
+                      <div class="expense days-30">
+                          <div class="expense-tooltip">
+                              <p>Expense</p>
+                              <h6>$ 1,347.00</h6>
+                          </div>
+                      </div>
+                      <div class="income days-90">
+                          <div class="income-tooltip">
+                              <p>Income</p>
+                              <h6>$ 4,090.78</h6>
+                          </div>
+                      </div>
+                      <div class="expense days-90">
+                          <div class="expense-tooltip">
+                              <p>Expense</p>
+                              <h6>$ 3,347.00</h6>
+                          </div>
+                      </div>
+                      <div class="income days-180">
+                          <div class="income-tooltip">
+                              <p>Income</p>
+                              <h6>$ 14,352.96</h6>
+                          </div>
+                      </div>
+                      <div class="expense days-180">
+                          <div class="expense-tooltip">
+                              <p>Expense</p>
+                              <h6>$ 4,784.32</h6>
+                          </div>
+                      </div>
+                      <div class="income days-365">
+                          <div class="income-tooltip">
+                              <p>Income</p>
+                              <h6>$ 23,871.78</h6>
+                          </div>
+                      </div>
+                      <div class="expense days-365">
+                          <div class="expense-tooltip">
+                              <p>Expense</p>
+                              <h6>$ 9,283.47</h6>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+        </div>
+    </div>
+</section>
+
+    <script>
+
+        //login button part start
+        const logInButton = document.getElementById('loginBtn');
+        logInButton.addEventListener('click', function(){
+            const logIn = document.getElementById('logIn');
+            logIn.style.display = 'none';
+        const transactionArea = document.getElementById('transaction-area');
+        transactionArea.style.display = 'block'
+        })
+        //transaction button part start
+
+        const depositBtn = document.getElementById('addDeposit');
+        depositBtn.addEventListener('click', function(){
+        const depositAmount = document.getElementById('depositAmount').value;
+        const depositAmountNumber = parseFloat(depositAmount); 
+
+    function updateSpanText(id, depositAmountNumber){
+        const curent = document.getElementById(id).innerText;
+        const curentNumber = parseFloat(curent);
+        const totalAmount = depositAmountNumber + curentNumber;
+        document.getElementById(id).innerText = totalAmount;
+
+    }
+    updateSpanText('curentBalance', depositAmountNumber);
+    updateSpanText('curentDeposit', depositAmountNumber);
+        document.getElementById('depositAmount').value = "";
+        })
+
+        // withdraw event part start
+        const withdrawBtn = document.getElementById('addWithdraw');
+        withdrawBtn.addEventListener('click', function(){
+            const withdrawNumber = getInputNumber("withdrawAmount")
+          updateSpanText('curentWithdraw', withdrawNumber);
+
+          updateSpanText('curentBalance', -1 * withdrawNumber);
+          document.getElementById("withdrawAmount").value ="";
+
+          function updateSpanText(id, depositAmountNumber){
+        const curent = document.getElementById(id).innerText;
+        const curentNumber = parseFloat(curent);
+        const totalAmount = depositAmountNumber + curentNumber;
+        document.getElementById(id).innerText = totalAmount;
+
+    }
+        })
+        function getInputNumber(id){
+            const withdrawAmount = document.getElementById(id).value;
+        const withdrawNumber = parseFloat(withdrawAmount);
+        return withdrawNumber;
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+
+    <link rel="stylesheet" href="js/bank.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
